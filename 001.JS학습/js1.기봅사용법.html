@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1.기본사용법-DOM</title>
+    <style> 
+        /* 제목 */
+        h1 { text-align: center;}
+        /* 드라마 박스 */
+        .myo {
+            position: absolute;
+            top:0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+
+            border: 5px solid green;
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 150px;
+            /* font 스두크 줄체 */
+            font: bold 30px/150px verdana;
+            cursor: pointer;
+        }
+        #name {}
+    </style>
+    <script>
+        /* 
+        자바스크립트란 
+        - 고정적인 html구조와 css로 디자인된 웹 문서를 변경하기 위해 
+        개발된 브라우저 전용 스크립트 언어
+
+        [js 코딩구역]
+        1. 인터널 방식 (internal)
+        -html script 태그 안에 기술함 
+
+        2. 익스터널방식 (external)
+        -js 확장자를 가지는 외부 파일에 기술함
+        예 : <script src="js외부파일">
+
+        3. 이벤트 속성 인라인 코딩
+        -html 이벤트속성의 값으로 코딩한다
+        예 : <h1 onclick="js코드">
+
+
+            JS의 역할
+            1. html 변경
+            2. css 변경
+
+
+            [JS의 화면출력]
+
+            1.document.wrie (내용)
+            -html문서 화면 상단출력(태그사용 가능)
+
+            2. alert(내용) - 팝업 형식의 내용창
+
+            3. console.log(내용)
+            -브라우저 콘솔모드에 내용이 찍힘
+
+
+            [js코드의 특징]
+            js 명령어 실행코드는 만나는 즉시 
+            실행된다 . 바로 실행하지 않으려면 
+            함수가 필요합니다. 
+
+            [함수 기본]
+            -정의 : 코드를 저장하는 메모리 공간 ( 명령어 들이 실행하기 위한 )
+            -사용법 : 
+            function(전달 변수){코드}
+            -함수의 호출 : 
+            함수명 () -> 전달값을 소괄호 안에 한다는데 해볼까?
+        */
+        
+            //출력1
+            // document.write('<h1>나는 프론트엔드 가발자!</h1>');
+            //출력2
+            // alert ("그러냐?");
+            //출력3
+            // console.log('축하드려요!');
+
+            /*******************************************
+                함수명 : 나야나
+                기능 : p태그 변경하기 
+            *******************************************/
+           function 나야나(){
+            //1. 호출확인
+            console.log('함수야!');
+
+           }//////////////// 나야나 함수 //////////////////
+
+    </script>
+</head>
+<body>
+    <h1> JS 기본 사용법 </h1>
+    <p class="myo" onclick="나야나()">나는 매일 생각한다<br>
+    도대체 <span id="name"></span></p>
+    
+</body>
+</html>
